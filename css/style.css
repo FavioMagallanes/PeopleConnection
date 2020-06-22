@@ -75,7 +75,8 @@ header,
 h6 {
   line-height: 1.7;
 }
-
+/*fin navbar*/
+/*Comienzo secc nosotros*/
 .nosotros {
   height: 50%;
   display: flex;
@@ -91,7 +92,7 @@ h6 {
 
 .izquierda {
   background: #fcd21d;
-  height: 90vh;
+  height: 100vh;
   width: 50%;
 }
 
@@ -100,7 +101,7 @@ h6 {
   background-size: cover;
   background-position: center;
   width: 50%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .pantalla-dividida {
@@ -113,7 +114,8 @@ h6 {
   width: 50%;
   margin: auto;
 }
-
+/*Fin secc nosotros*/
+/*Comienzo secc contacto*/
 .contact-section {
   background: #313840;
   padding: 80px 0;
@@ -270,7 +272,8 @@ h6 {
   -webkit-text-fill-color: transparent;
   transform: scale(2.2);
 }
-
+/*Fin secc contacto*/
+/*Scroll*/
 ::-webkit-scrollbar {
   width: 20px;
 }
