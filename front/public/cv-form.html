@@ -58,34 +58,38 @@
         </ul>
       </div>
       <div class="contactForm">
-        <h2>Evianos tu CV !</h2>
-        <div class="formBox">
-          <div class="inputBox w50">
-            <input type="text" name="" required>
-            <span>Nombre</span>
+        <h2>Envianos tu CV !</h2>
+        <form id="cv-form">
+          <div class="formBox">
+            <div class="inputBox w50">
+              <input id="input-name" type="text" name="" required>
+              <span>Nombre</span>
+            </div>
+            <div class="inputBox w50">
+              <input id="input-lastname" type="text" name="" required>
+              <span>Apellido</span>
+            </div>
+            <div class="inputBox w100">
+              <input id="input-email" type="text" name="" required>
+              <span>E-Mail</span>
+            </div>
+            <div class=" inputBox w100">
+              <input id="input-cvfile" type="file" name="Adjunta tu CV">
+            </div>
+            <div class="inputBox w100">
+              <textarea id="message" name="" required></textarea>
+              <span>Dejanos tu mensaje...</span>
+            </div>
+            <div class="inputBox w100">
+              <input type="submit" value="Enviar">
+            </div>
           </div>
-          <div class="inputBox w50">
-            <input type="text" name="" required>
-            <span>Apellido</span>
-          </div>
-          <div class="inputBox w100">
-            <input type="text" name="" required>
-            <span>E-Mail</span>
-          </div>
-          <div class=" inputBox w100">
-            <input type="file" name="Adjunta tu CV" required>
-          </div>
-          <div class="inputBox w100">
-            <textarea name="" required></textarea>
-            <span>Dejanos tu mensaje...</span>
-          </div>
-          <div class="inputBox w100">
-            <input type="submit" value="Enviar">
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>
+
+  <script src="./js/cvform/cvform.js"></script>
 </body>
 
 </html>
