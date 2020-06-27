@@ -1,0 +1,25 @@
+{
+  "name": "peopleconnection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon front/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FavioMagallanes/peopleConnection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FavioMagallanes/peopleConnection/issues"
+  },
+  "homepage": "https://github.com/FavioMagallanes/peopleConnection#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
