@@ -5,7 +5,7 @@ const inputtCvfile = document.getElementById("input-cvfile");
 const form = document.getElementById("cv-form");
 const inputMessage = document.getElementById("message");
 
-form.addEventListener("submit", function(event){
+form.addEventListener("submit", function (event) {
   event.preventDefault();
   let postulante = {
     name: inputName.value,
@@ -16,10 +16,10 @@ form.addEventListener("submit", function(event){
   enviarDatos(postulante);
 })
 
-function enviarDatos(postulanteInfo){
+function enviarDatos(postulanteInfo) {
   let xml = new XMLHttpRequest;
 
-  xml.onload = function(){
+  xml.onload = function () {
     let reponse = JSON.parse(xml.responseText);
     console.log(response);
   }

@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 app.post('/enviar-datos', function (req, res) {
   console.log(req.body);
   if (req.body) {
-    //aca deberiamos empezar a usar nodemailer para enviar nuestros datos
+    //Nodemailer
     let transporter = nodeMailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
@@ -29,7 +29,7 @@ app.post('/enviar-datos', function (req, res) {
     });
 
     let htmlBody = `
-      <h3>Nuevo Postulante</h3>
+      <h3>Nuevo CV recibido</h3>
       <ul>
         <li>Nombre: ${req.body.name}</li>
         <li>Apellido: ${req.body.lastname}</li>
@@ -40,7 +40,7 @@ app.post('/enviar-datos', function (req, res) {
     let mail = {
       from: process.env.EMAIL,
       to: process.env.EMAIL,
-      subject: "Nodemailer test",
+      subject: "Nuevo CV Recibido !",
       html: htmlBody
     }
 

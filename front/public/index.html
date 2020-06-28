@@ -73,11 +73,6 @@
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.html" class="nav-link waves-effect waves-light ml-5">
-                <i class="fas fa-user"></i>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -167,8 +162,9 @@
       </section>
     </div>
   </main>
+  <div class="row">
   <section class="pantalla-dividida" id="nosotros">
-    <div class="izquierda">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 izquierda">
       <h2 class="h2-responsive titulo white-text text-uppercase font-weight-bold mt-5 mb-4 text-center ">¿Quiénes somos?
       </h2>
       <p class="parrafo text-justify">People Connection está conformada por un equipo de profesionales que trabajan en
@@ -179,18 +175,19 @@
         soluciones concretas, sosteniendo altos estándares de calidad y comunicación permanente.
         Nos destacamos por nuestra seriedad, compromiso, valores y cultura del trabajo.</p>
     </div>
-    <div class="derecha"></div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 derecha"></div>
     <!--Fin nosotros-->
-    <!--Secc contacto-->
   </section>
+</div>
+  <!--Secc contacto-->
   <div class="contact-section" id="contacto">
     <div class="inner-width">
       <h2>Contactanos</h2>
-      <form action="/send-email" method="POST" class="formulario">
-        <input type="text" name="name" required class="name" placeholder="Tu nombre" id="nombre">
-        <input type="email" name="email" required class="email" placeholder="Tu correo" id="email">
-        <textarea rows="1" placeholder="Mensaje" class="menssage" id="mensaje"></textarea>
-        <button type="text" size="32" name="inputfield">Enviar</button>
+      <form id="contact-form" class="formulario">
+        <input type="text" name="name" required class="name" placeholder="Tu nombre" id="input-name">
+        <input type="email" name="email" required class="email" placeholder="Tu correo" id="input-email">
+        <textarea id="message" rows="1" placeholder="Mensaje" class="menssage"></textarea>
+        <button type="text" size="32" name="">Enviar</button>
       </form>
       <div class="buttons mt-5">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -279,6 +276,7 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/contactForm/contact-form.js"></script>
 </body>
 
 </html>
