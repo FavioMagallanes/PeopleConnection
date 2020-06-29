@@ -198,3 +198,21 @@ section .container .contactForm .formBox input[type="submit"] {
 section .container .contactForm .formBox input[type="submit"]:hover {
   background: #ff568c;
 }
+
+@media (max-width: 767px) {
+  section .container {
+    flex-direction: column-reverse;
+    min-width: auto;
+  }
+  section .container .contactinfo {
+    position: initial;
+    width: auto;
+  }
+  section .container .contactForm {
+    position: initial;
+    width: auto;
+    padding: 40px;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+}

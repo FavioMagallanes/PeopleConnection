@@ -91,16 +91,17 @@ h6 {
 
 .izquierda {
   background: #fcd21d;
-  height: 100vh;
   width: auto;
 }
 
-.derecha {
-  background: url(../img/quienes.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 50%;
-  height: 100vh;
+@media (min-width: 992px) {
+  .derecha {
+    background: url(../img/quienes.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+  }
 }
 
 .pantalla-dividida {
@@ -112,6 +113,7 @@ h6 {
   color: #fff;
   width: 50%;
   margin: auto;
+  @media;
 }
 /*Fin secc nosotros*/
 /*Comienzo secc contacto*/
