@@ -19,8 +19,8 @@ function enviarDatos(contactInfo) {
 
     xml.onload = function () {
         let response = JSON.parse(xml.responseText);
-        if(response.success){
-            alert("El mensaje fue enviado correctamente", "Mensaje enviado");
+        if (response.success) {
+            alert("Tu consulta fue enviada correctamente", "Mensaje enviado");
         }
     }
 
