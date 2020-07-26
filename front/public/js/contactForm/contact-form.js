@@ -18,8 +18,10 @@ function enviarDatos(contactInfo) {
     let xml = new XMLHttpRequest;
 
     xml.onload = function () {
-        let reponse = JSON.parse(xml.responseText);
-        console.log(response);
+        let response = JSON.parse(xml.responseText);
+        if(response.success){
+            alert("El mensaje fue enviado correctamente", "Mensaje enviado");
+        }
     }
 
     xml.open("POST", "/enviar-consulta", true);

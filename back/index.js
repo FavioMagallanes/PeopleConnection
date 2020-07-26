@@ -32,6 +32,11 @@ app.get('/error-al-enviar', function (req, res) {
   res.sendFile(pathHome);
 });
 
+app.get('/enviado', function (req, res) {
+  let pathHome = path.join(__dirname, "../front/public/msgEnviado.html");
+  res.sendFile(pathHome);
+});
+
 app.post('/enviar-datos', upload.single('cv-file'), emailController.sendCvEmail);
 app.post('/enviar-consulta', emailController.sendInfoEmail)
 

@@ -40,7 +40,7 @@ function sendCvEmail(req, res) {
       } 
 
       //ACA SE REDIRECCIONA CUANDO SE MANDO EL MAIL
-      res.status(200).redirect("/");
+      res.redirect("/enviado");
     })
   }
 }
@@ -77,6 +77,7 @@ function sendInfoEmail(req, res) {
       if (err) return res.send(err);
 
       res.status(200).json({
+        success: true,
         message: 'Email sent by test'
       });
     })
