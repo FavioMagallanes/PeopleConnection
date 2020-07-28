@@ -2,6 +2,7 @@ const inputName = document.getElementById("input-name");
 const inputtEmail = document.getElementById("input-email");
 const form = document.getElementById("contact-form");
 const inputMessage = document.getElementById("message");
+const btn = document.getElementById('btn');
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -20,7 +21,13 @@ function enviarDatos(contactInfo) {
     xml.onload = function () {
         let response = JSON.parse(xml.responseText);
         if (response.success) {
-            alert("Tu consulta fue enviada correctamente", "Mensaje enviado");
+            Swal.fire({
+                position: 'top-center',
+                icon: 'success',
+                title: 'Su consulta fue enviada!',
+                showConfirmButton: false,
+                timer: 3000
+            })
         }
     }
 
