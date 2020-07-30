@@ -22,12 +22,12 @@ function enviarDatos(contactInfo) {
         let response = JSON.parse(xml.responseText);
         if (response.success) {
             Swal.fire({
-                position: 'top-center',
+                position: 'center',
                 icon: 'success',
-                title: 'Su consulta fue enviada!',
+                title: 'Su consulta ha sido enviada!',
                 showConfirmButton: false,
                 timer: 3000
-            })
+              })
         }
     }
 
