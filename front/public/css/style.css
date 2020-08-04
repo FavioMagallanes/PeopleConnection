@@ -86,12 +86,14 @@ h6 {
 }
 
 .nosotros p {
+  width: 100%;
+  text-align: left;
   font-weight: 300;
+  margin: none;
 }
 
 .izquierda {
   background: #fcd21d;
-  width: auto;
 }
 
 @media (min-width: 992px) {
@@ -110,6 +112,7 @@ h6 {
 
 .parrafo {
   font-size: 20px;
+  text-align: left;
   color: #fff;
   width: 50%;
   margin: auto;
