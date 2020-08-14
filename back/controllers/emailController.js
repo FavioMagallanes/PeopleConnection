@@ -33,10 +33,10 @@ function sendCvEmail(req, res) {
       attachments: [ file ]
     }
 
-    transporter.sendMail(mail, function (err, info) {
+    transporter.sendMail(mail, function (err, response) {
       if (err){
         //ACA REDIRECCIONAR CUANDO HUBO UN ERROR
-        return res.send(err);
+        return res.send("Su CV no pudo ser enviado "+err);
       } 
 
       //ACA SE REDIRECCIONA CUANDO SE MANDO EL MAIL
